@@ -1,0 +1,30 @@
+<mat-table [dataSource]="pets" class="mat-elevation-z8">
+    
+    <ng-container matColumnDef="nome">
+      <mat-header-cell *matHeaderCellDef> Nome </mat-header-cell>
+      <mat-cell *matCellDef="let pet"> {{pet.nome}} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="raca">
+      <mat-header-cell *matHeaderCellDef> Raça </mat-header-cell>
+      <mat-cell *matCellDef="let pet"> {{pet.raca}} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="idade">
+      <mat-header-cell *matHeaderCellDef> Idade </mat-header-cell>
+      <mat-cell *matCellDef="let pet"> {{pet.idade}} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="peso">
+      <mat-header-cell *matHeaderCellDef> Peso </mat-header-cell>
+      <mat-cell *matCellDef="let pet"> {{pet.peso}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="cidade">
+        <mat-header-cell *matHeaderCellDef> Cidade </mat-header-cell>
+        <mat-cell *matCellDef="let pet"> {{pet.cidade}} </mat-cell>
+      </ng-container>
+  
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>

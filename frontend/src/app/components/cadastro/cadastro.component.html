@@ -1,0 +1,29 @@
+<mat-card>
+    <mat-card-title>Dados Cadastrais</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" name="nome">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Senha" type="password" name="senha">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Rua" name="rua">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Numero" name="numero">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Cidade" name="cidade">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Estado" name="estado">
+        </mat-form-field>
+    </form>
+    <button mat-button  color="primary" click="atualizaUsuario()">
+        Confirmar
+    </button>
+    <button mat-button color="primary">
+        Cancelar
+    </button>
+</mat-card>

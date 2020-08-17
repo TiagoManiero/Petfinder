@@ -1,0 +1,22 @@
+<mat-card>
+    <mat-card-title>Login</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput [(ngModel)]="usuario.nome" placeholder="Usuário" name="usuario">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput [(ngModel)]="usuario.senha" placeholder="Senha" type="password" name="senha">
+        </mat-form-field>
+    </form>
+    <button mat-button  color="primary" type="submit" name="action" (click)="fazerLogin()">
+        Entrar
+    </button>
+    <button mat-button color="primary">
+        Cancelar
+    </button>
+    <br>
+    <h3>Não é cadastrado?</h3>
+    <button mat-button color="primary">
+        <a span routerLink="/cadastro">Cadastrar usuário</a>
+    </button>
+</mat-card>
